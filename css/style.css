@@ -1,109 +1,62 @@
-body{
+body {
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
 }
-.body-bg{
-    background-image: url('../images/city.png');
+
+.body-bg {
+    background-image: url('../images/caribian1.jpg');
     background-size: cover;
 }
-.color-grey{
-    color: #4b4b4b;
-}
-h1, h2, h3, h4, h5, h6{
-    font-family: 'IBM Plex Serif', serif;
-}
-.cv-header, .profile, .experiense, .company-name{
-    font-family: 'IBM Plex Serif', serif;
-}
-.cv{
+
+.weather{
     margin-top: 50px;
     border: 1px solid #4b4b4b;
-    box-shadow: 1px 1px 10px #0000;
+    box-shadow: 1px 1px 10px #000;
 }
-.cv-left{
-    background-color: #4b4b4b;
+.weather-left{
     min-height: 30vh;
-    color: #fff;
 }
-.cv-right{
-    background-color: #fff;
+.weather-right{
     min-height: 30vh;
-    color: #131313;
 }
-.photo-block{
-
+h1{
+    margin-left: 30px;
+    font-family: 'Petit Formal Script', cursive;
 }
-.cv-left a{
-    color: #fff;
-}
-.cv-left a:hover{
-    text-decoration: none;
-}
-.cv-left ul{
-    line-height: 175%;
-    padding-left: 30px;
-}
-.cv-left ul.contacts-block{
-    list-style-type: none;
-    padding-left: 0;
-}
-.cv-left .address{
-    font-style: italic;
-}
-.company-name{
-    font-size: 1.1rem;
-    text-transform: uppercase;
-}
-article{
-    padding: 20px;
-}
-.company-name i{
-    font-size: .8rem;
-    text-transform: uppercase;
-    font-family: Arial, sans-serif;
-    text-transform: none;
-}
-.job-title{
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-.lines{
-    overflow: hidden;
-}
-.lines::before, .lines::after{
-    content: "";
-    display: inline-block;
-    box-sizing: border-box;
-    width: 100%;
-    height: 3px;
-    background-color: #4b4b4b;
-    border: 1px solid #fff;
-    vertical-align: middle;
-}
-.lines::before{
-    margin-left: -100%;
-}
-.lines::after{
-    margin-right: -100%;
+.form-select{
+    margin-top: 10px;
 }
 @media (max-width: 991.98px){
-.cv-left h1, .cv-left h2, .cv-left h3, .cv-left h4{
-    font-size: 1.3rem;
+
 }
-.cv-left ul{
-    line-height: 150%;
-    padding-left: 25px;
-}
+@media (max-width: 575.98px){
+
 }
 
-@media (max-width: 575.98px){
-    .cv{
-        margin-top: 0;
-    }
-    .photo-block img{
-        display: block;
-        max-width: 50%;
-        margin: 20px auto;
-    }
+.slider {
+    width: 128px;
+    height: 128px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.slider-line {
+    height: 128px;
+    width: 512px;
+    background-color: transparent;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+.ar {
+    height: 50px;
+    width: 50px;
+}
+.ar2 {
+    height: 50px;
+    width: 50px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    color:red;
 }
